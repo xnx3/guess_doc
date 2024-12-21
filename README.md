@@ -9,7 +9,7 @@ Mysql 5.7
 
 ## 使用文档
 1. Windows 系统下私有化部署 openGuess
-2. 使用 Navicat 进行管理 Guess
+2. 使用 Navicat 进行管理 Guess 并创建数据库
 3. 将 Mysql 中数据迁移到 Guess 中
 4. 更改自己的 SpringBoot 项目以适配 Guess
 
