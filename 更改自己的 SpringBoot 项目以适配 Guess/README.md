@@ -25,7 +25,7 @@ spring.datasource.driver-class-name=org.postgresql.Driver
 
  不同的连接会话可以设置不同的 `currentSchema`，互不干扰。 有会话级别的隔离
 
-如果不指定，通常回去public中查找数据
+如果不指定，通常会去public中查找数据
 
 ## 添加pom依赖
 
