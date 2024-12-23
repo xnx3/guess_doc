@@ -15,7 +15,17 @@ spring.datasource.password= #数据库密码
 spring.datasource.driver-class-name=org.postgresql.Driver
 ```
 
- **currentSchema的意思就是指定默认查找路径**
+ 如果配置中有
+
+```
+spring.jpa.properties.hibernate.hbm2ddl.auto=update
+spring.jpa.hibernate.ddl-auto=validate
+
+这种语句要把语句注释掉不然会报错
+[ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:142) - 不良的类型值 long : 170141183460469231731687303715884105727
+```
+
+**currentSchema的意思就是指定默认查找路径**
 
  **可以指定多个，中间用逗号分隔，如：spring.datasource.url=jdbc:postgresql://${database.ip}:5432/${database.name}?currentSchema=ceshi,ceshi1**
 
